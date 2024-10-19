@@ -108,6 +108,60 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.popup-background{
+  background-color: rgba(0, 0, 0, 0.5);
+  position:absolute;
+  display:flex;
+  visibility: hidden;
+  height: 90vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+.clickOnMe{
+  color:whitesmoke;
+  font-size: auto;
+  text-decoration: underline; 
+  cursor:pointer;
+  width:fit-content;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.clickOnMe:hover{
+  color:rgb(124, 123, 123);
+  font-size: auto;
+}
+
+.popup-button{
+  background-color: #4a0b63;
+  color: white;
+  border:0px;
+  margin-right:auto;
+  margin-bottom:auto;
+  z-index:2;
+}
+.popupImg{
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  background:rgb(108, 0, 0);
+  margin-top:5%;
+  max-width: 80%;
+  height: 80%;
+}
+.popupText{
+  color:rgb(229, 229, 229);
+  margin-top:12%;
+}
+.popup{
+  z-index: 1;
+  display:flex;
+  visibility: hidden;
+  height: 70vh;
+  width: 50vw;
+  background-color: #4a0b63;
+  border-radius: 10px; 
+}
 
 .inp{
   padding-bottom:5vh;
@@ -11106,7 +11160,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #4a0b63;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
