@@ -45,21 +45,25 @@
          <script>
             function displayPopup(){
                 const background = document.getElementById('popupBackground');
+                const abt = document.getElementById('abt');
                 const popup = document.getElementById('popup');
                 background.style.visibility = 'visible';
                 popup.style.visibility = 'visible';
+                abt.style.color = 'rgba(180, 180, 180, 0.265)';
 
             }
             function closePopup(){
                 const background = document.getElementById('popupBackground');
+                const abt = document.getElementById('abt');
                 const popup = document.getElementById('popup');
                 background.style.visibility = 'hidden';
                 popup.style.visibility = 'hidden';
+                abt.style.color = 'white';
 
             }
          </script>
         <div class="about-section">
-            <h2 class="about-title-txt"><u>About Me</u></h2> 
+            <h2 class="about-title-txt"><u id="abt">About Me</u></h2> 
         </div>
             <div class="sqr-section text-center" id="about"> 
                                 <div class="about-sqr-skills">
